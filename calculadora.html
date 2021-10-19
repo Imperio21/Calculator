@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<HTML lang="pt/br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js"></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <p id="screen"></p>
+
+        </header>
+
+        <table>
+            <tbody>
+                <tr class=" character">
+                    <td id="btn" onclick="clearScr()">AC</td>
+                    <td onclick="sendNum('%')">%</td>
+                    <td onclick="sendNum('/')">/</td>
+                </tr>
+                <tr class="character">
+                    <td onclick="sendNum('*')">*</td>
+                    <td onclick="sendNum('+')">+</td>
+                    <td onclick="sendNum('-')">-</td>
+                </tr>
+                <tr class="number">
+                    <td onclick="sendNum('7')">7</td>
+                    <td onclick="sendNum('8')">8</td>
+                    <td onclick="sendNum('9')">9</td>
+                </tr>
+                <tr class="number color">
+                    <td onclick="sendNum('6')">6</td>
+                    <td onclick="sendNum('5')">5</td>
+                    <td onclick="sendNum('4')">4</td>
+                </tr>
+                <tr class="number color">
+                    <td onclick="sendNum('3')">3</td>
+                    <td onclick="sendNum('2')">2</td>
+                    <td onclick="sendNum('1')">1</td>
+                </tr>
+                <tr class="character color">
+                    <td onclick="sendNum('.')">.</td>
+                    <td onclick="sendNum('0')">0</td>
+                    <td onclick="equalTo()"> = </td>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</HTML>
